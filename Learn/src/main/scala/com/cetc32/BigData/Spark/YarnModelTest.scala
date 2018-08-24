@@ -9,5 +9,5 @@ object YarnModelTest extends App{
   spark.sql("use test")
   spark.sql("insert into student values (4,'andy')")
   val databases=spark.sql("select * from student")
-  databases.show
+  databases.show()
 }
